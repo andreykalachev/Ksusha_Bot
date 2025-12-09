@@ -4,12 +4,6 @@ ABOUT_TEXT: |
   I'm Ksenia ALF — a third‑generation artist painting in a soft, abstract style. I create artworks that celebrate femininity, warmth and emotional color.
 
   This bot is your little creative studio: explore paintings, learn through short guides, try a playful art-style quiz and connect with me for commissions or sessions. Tap around and let's discover what colors say about you! 🎨💬
-LABEL_SERVICES: "🧡 Services"
-LABEL_PAINTINGS: "🖼️ Paintings"
-LABEL_ARTICLES: "📝 Articles"
-LABEL_CONTACTS: "📬 Contacts"
-LABEL_BACK: "🔙 Back"
-LABEL_QUIZ: "🎨 Quiz: The Color That Leads You"
 SERVICES_TEXT: |
   I’m happy to see you here — welcome to a cozy space of creativity and color 🎨✨
 
@@ -39,20 +33,13 @@ PAINTINGS_TEXT: |
 
   Worldwide shipping available 🌍 — installment options on request. For inquiries, DMs are open: @kseniialf 💌
 CONTACTS_TEXT: "I’m always happy to connect — tap any button below to reach me directly. Let’s make something beautiful together! 🤍"
-CONTACTS_BTN_TELEGRAM: "Telegram"
-CONTACTS_BTN_CHANNEL: "Telegram channel"
-CONTACTS_BTN_INSTAGRAM: "Instagram"
-CONTACTS_BTN_BEHANCE: "Behance"
-CONTACTS_BTN_EMAIL: "Email"
 GUIDE_GREET: |
   Hello, beautiful! ❤️
 
   So glad you're curious about color and yourself. This guide is a gentle companion for self‑discovery through art — small prompts, reflections and playful exercises to help you see and feel.
 GUIDE_TEXT: |
   Hi, guide is unfortunately not yet translated to English:(
-LABEL_GUIDE: "Guide"
-LABEL_MAIN_MENU: "Main menu"
-UNKNOWN_COMMAND: "Sorry, I don't understand:("
+ARTICLES_MENU_GREETING: "Choose an article or take the quiz — let's discover your colors together! 🎨✨"
 HELP_TEXT: |
   Hi! 👋 I'm your friendly art assistant.
 
@@ -64,7 +51,19 @@ HELP_TEXT: |
   - /contacts — get in touch with the artist
 
   Try the Art Style Quiz or open the Guide for a quick creative prompt! 🎨
+LABEL_SERVICES: "🧡 Services"
+LABEL_PAINTINGS: "🖼️ Portfolio"
+LABEL_ARTICLES: "📝 Free products"
+LABEL_CONTACTS: "📬 Contacts"
+LABEL_BACK: "🔙 Back"
+LABEL_QUIZ: "🎨 Quiz: The Color That Leads You"
+LABEL_GUIDE: "Guide"
+LABEL_MAIN_MENU: "Main menu"
+CONTACTS_BTN_TELEGRAM: "Telegram"
+CONTACTS_BTN_CHANNEL: "Telegram channel"
+CONTACTS_BTN_INSTAGRAM: "Instagram"
+CONTACTS_BTN_BEHANCE: "Behance"
+CONTACTS_BTN_EMAIL: "Email"
+UNKNOWN_COMMAND: "Sorry, I don't understand:("
 LANG_EN: "English 🇬🇧"
 LANG_RU: "Русский 🇷🇺"
-ARTICLES_MENU_GREETING: "Choose an article or take the quiz — let's discover your colors together! 🎨✨"
-
