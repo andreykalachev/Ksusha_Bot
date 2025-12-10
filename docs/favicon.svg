@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="wood-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5D4037;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8D6E63;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4E342E;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="metal-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9E9E9E;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#F5F5F5;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#BDBDBD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#757575;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bristle-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E65100;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF9800;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EF6C00;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rotated 45 degrees for dynamic look -->
+  <g transform="rotate(45, 32, 32)">
+    <!-- Handle -->
+    <path d="M28 60 L 36 60 L 35 32 L 29 32 Z" fill="url(#wood-gradient)" />
+    <!-- Rounded bottom of handle -->
+    <path d="M28 60 Q 32 64 36 60" fill="#3E2723" />
+
+    <!-- Ferrule (Metal part) -->
+    <rect x="28" y="22" width="8" height="10" fill="url(#metal-gradient)" />
+    <!-- Ferrule details -->
+    <line x1="28" y1="24" x2="36" y2="24" stroke="#616161" stroke-width="0.5" />
+    <line x1="28" y1="30" x2="36" y2="30" stroke="#616161" stroke-width="0.5" />
+
+    <!-- Bristles -->
+    <path d="M29 22 L 35 22 Q 36 10 32 2 Q 28 10 29 22 Z" fill="url(#bristle-gradient)" />
+    
+    <!-- Paint Tip -->
+    <path d="M32 2 Q 34 6 34 9 Q 32 11 30 9 Q 30 6 32 2" fill="#D84315" />
+  </g>
+</svg>
