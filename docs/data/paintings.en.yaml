@@ -1,0 +1,239 @@
+
+Paintings:
+      Europe:
+            - Id: 1
+                  Slug: "31-days-31-squares"
+                  Main_image: "1_eu_main_image.jpg"
+                  Other_images:
+                        - "1_eu_add_1.jpg"
+                        - "1_eu_add_2.jpg"
+                        - "1_eu_add_3.jpg"
+                        - "1_eu_add_4.jpg"
+                        - "1_eu_add_5.jpg"
+                        - "1_eu_add_6.jpg"
+                  Name: "31 days - 31 squares"
+                  Materials: "Acrylic on canvas, mixed technique"
+                  Size: "88x100 cm"
+                  Price: "300 eur"
+                  Year: "2025"
+                  Description: |
+                        These aren’t just drawings - they’re a diary of feelings, unfolding over the month of May.
+                        A journey of self-reflection and rediscovery.
+                        31 days of searching.
+                        And 31 days to hear my own answer.
+            - Id: 2
+                  Slug: "flamma"
+                  Main_image: "2_eu_main_image.jpg"
+                  Other_images:
+                        - "2_eu_add_1.jpg"
+                        - "2_eu_add_2.jpg"
+                        - "2_eu_add_3.jpg"
+                        - "2_eu_add_4.jpg"
+                        - "2_eu_add_5.jpg"
+                        - "2_eu_add_6.jpg"
+                  Name: "Flamma"
+                  Materials: "Acrylic on canvas"
+                  Size: "105x102 cm"
+                  Price: "400 eur"
+                  Year: "2025"
+                  Description: |
+                        In this work, the female figure embodies the inner flame - the power that creates, destroys, and is reborn again.
+                        The woman’s silhouette becomes the image of a Phoenix, rising not from ashes, but from her own desire to live, to feel and to be.
+                        Red and warm tones symbolize passion, vitality, and sensuality, while the green and blue hues of the background reflect intuition and inner calm.
+                        The contrast between these colors forms a space between the outer and inner worlds, between body and soul - the place where feminine strength is born.
+            - Id: 3
+                  Slug: "inner-goal"
+                  Main_image: "3_eu_main_image.jpg"
+                  Other_images:
+                        - "3_eu_add_1.jpg"
+                        - "3_eu_add_2.jpg"
+                        - "3_eu_add_3.jpg"
+                  Name: "Inner goal"
+                  Materials: "Acrylic on canvas"
+                  Size: "20x40 cm"
+                  Price: "30 eur"
+                  Year: "2024"
+                  Description: |
+                        The journey begins on the left in a violet haze of doubt, where the idea is born. In the center, the hero undergoes a complex transformation, gaining form and experience through continuous motion. 
+                        The story concludes on the right, where the weight of the path dissolves into the pure golden light of a dream fulfilled.
+            - Id: 4
+                  Slug: "im-just-a-flower"
+                  Main_image: "4_eu_main_image.jpg"
+                  Other_images:
+                        - "4_eu_add_1.jpg"
+                        - "4_eu_add_2.jpg"
+                        - "4_eu_add_3.jpg"
+                        - "4_eu_add_4.jpg"
+                  Name: "I'm just a flower"
+                  Materials: "Acrylic on canvas"
+                  Size: "30x40 cm"
+                  Price: "30 eur"
+                  Year: "2024"
+                  Description: "It's pretty simple. Abstract vision of a flower in the park."
+      Russia:
+            - Id: 5
+                  Slug: "love"
+                  Main_image: "5_ru_main_image.jpg"
+                  Other_images:
+                        - "5_ru_add_1.jpg"
+                        - "5_ru_add_2.jpg"
+                        - "5_ru_add_3.jpg"
+                  Name: "Love"
+                  Materials: "Acrylic on canvas"
+                  Size: "d=30 cm"
+                  Price: "30 eur"
+                  Year: "2022"
+                  Description: |
+                        Take a closer look and you’ll see the hidden word “love.” Would you like to know the story behind this painting? I created it while teaching my very first online masterclass, explaining the basics of abstraction to the girls as we painted it together in real time. It started as a still life - just a few bottles standing on the table - which I transformed into the whole artwork. Can you see them?
+            - Id: 6
+                  Slug: "fearlessness"
+                  Main_image: "6_ru_main_image.jpg"
+                  Other_images:
+                        - "6_ru_add_1.jpg"
+                  Name: "Fearlessness"
+                  Materials: "Acrylic on canvas"
+                  Size: "30x30 cm"
+                  Price: "30 eur"
+                  Year: "2023"
+                  Description: "This painting was created at the moment when I opened up to a completely unfamiliar person, yet it felt as if we had known each other our whole lives. “Fearlessness” is about trust and honesty."
+            - Id: 7
+                  Slug: "in-depth"
+                  Main_image: "7_ru_main_image.jpg"
+                  Other_images:
+                        - "7_ru_add_1.jpg"
+                        - "7_ru_add_2.jpg"
+                        - "7_ru_add_3.jpg"
+                        - "7_ru_add_4.jpg"
+                  Name: "In depth"
+                  Materials: "Acrylic on canvas"
+                  Size: "120x140 cm"
+                  Price: "500 eur"
+                  Year: "2023"
+                  Description: |
+                        The sketch for this painting was created completely spontaneously. I was in Georgia, in a cozy apartment near a park where I was staying with a friend. On my last evening there, he asked me to draw something for him as a keepsake. I picked up a sheet of paper, a pencil, and switching off my mind, I sketched this. It carried so many feelings, meanings, and emotions. In that moment, we both probably understood that this was our first and last meeting.
+            - Id: 8
+                  Slug: "ghostly-lightness"
+                  Main_image: "8_ru_main_image.jpg"
+                  Other_images:
+                        - "8_ru_add_1.jpg"
+                  Name: "Ghostly lightness or You dissolve - I remain"
+                  Materials: "Acrylic on canvas"
+                  Size: "120x140 cm"
+                  Price: "400 eur"
+                  Year: "2023"
+                  Description: |
+                        In the artwork, we see a couple - a man holding a woman in his arms. Yet the man is barely visible, his outline blurred, as if he could dissolve at any moment, leaving the woman suspended in that position alone. But she has nothing to fear: the sky made of shimmering dots will protect her and lift her upward, carrying her to a new level - where everything will be different.
+            - Id: 9
+                  Slug: "threefold"
+                  Main_image: "9_ru_main_image.jpg"
+                  Other_images:
+                        - "9_ru_add_1.jpg"
+                  Name: "Threefold"
+                  Materials: "Acrylic on canvas"
+                  Size: "60x80 cm"
+                  Price: "240 eur"
+                  Year: "2023"
+                  Description: |
+                        The painting \"Threefold\" questions the idea of a single, unified self and seeks to understand: who are we truly? How many masks remain hidden behind the one the world sees? Who will be allowed to reach the final, deepest layer - after unraveling all the ones before it?
+            - Id: 10
+                  Slug: "together-in-profile"
+                  Main_image: "10_ru_main_image.jpg"
+                  Other_images: []
+                  Name: "Together in profile"
+                  Materials: "Acrylic on canvas"
+                  Size: "60x80 cm"
+                  Price: "240 eur"
+                  Year: "2023"
+                  Description: |
+                        The painting is about doubt and the first rift in a relationship. Yet both keep their thoughts unspoken, afraid to say them out loud. It captures that delicate moment when a once vibrant life becomes filled with routine, and one thought keeps circling in the mind: “I’m bored.” 
+                        Meanwhile, the partner feels a lack of affection and love, asking to be loved even more - but deep down he senses that none of it is truly serious.
+            - Id: 11
+                  Slug: "human-love"
+                  Main_image: "11_ru_main_image.jpg"
+                  Other_images:
+                        - "11_ru_add_1.jpg"
+                        - "11_ru_add_2.jpg"
+                        - "11_ru_add_3.jpg"
+                        - "11_ru_add_4.jpg"
+                  Name: "Human love"
+                  Materials: "Acrylic on canvas, mixed media"
+                  Size: "80x60 cm"
+                  Price: "100 eur"
+                  Year: "2021"
+                  Description: |
+                        The artwork raises an important and timely theme - the coexistence of animals and humans. What is a person capable of doing to those who depend on him simply because they share the same living space: accept them, reject them, dominate them, use them, or destroy them?
+            - Id: 12
+                  Slug: "above-the-bridge"
+                  Main_image: "12_ru_main_image.jpg"
+                  Other_images: []
+                  Name: "Above the bridge"
+                  Materials: "Tempera and acrylic on canvas"
+                  Size: "30x42 cm"
+                  Price: "50 eur"
+                  Year: "2020"
+                  Description: "Urban landscape capturing the architectural beauty of Saint Petersburg."
+            - Id: 13
+                  Slug: "together"
+                  Main_image: "13_ru_main_image.jpg"
+                  Other_images: []
+                  Name: "Together"
+                  Materials: "Watercolor on paper"
+                  Size: "60x120 cm"
+                  Price: "60 eur"
+                  Year: "2021"
+                  Description: "A delicate watercolor exploration of unity and connection."
+            - Id: 14
+                  Slug: "kazan-cathedral"
+                  Main_image: "14_ru_main_image.jpg"
+                  Sold: true
+                  Other_images: []
+                  Name: "Kazan Cathedral"
+                  Materials: "Tempera and acrylic on canvas"
+                  Size: "84x60 cm"
+                  Price: "50 eur"
+                  Year: "2020"
+                  Description: "Architectural study of one of Saint Petersburg's most iconic landmarks."
+            - Id: 15
+                  Slug: "from-saint-p-with-love"
+                  Main_image: "15_ru_main_image.jpg"
+                  Sold: true
+                  Other_images: []
+                  Name: "From Saint-P with love"
+                  Materials: "Tempera and acrylic on canvas"
+                  Size: "60x84 cm"
+                  Price: "50 eur"
+                  Year: "2020"
+                  Description: "A love letter to Saint Petersburg expressed through art."
+            - Id: 16
+                  Slug: "beauty-of-true-nature"
+                  Main_image: "01_sold.jpg"
+                  Sold: true
+                  Other_images: []
+                  Name: "The beauty of true nature"
+                  Materials: "Acrylic on wood"
+                  Size: "30x30 cm"
+                  Price: "SOLD"
+                  Year: "2020"
+                  Description: "A celebration of natural beauty captured on wood panel."
+            - Id: 17
+                  Slug: "lost-love"
+                  Main_image: "02_sold.jpg"
+                  Sold: true
+                  Other_images: []
+                  Name: "Lost love"
+                  Materials: "Acrylic on wood"
+                  Size: "30x30 cm"
+                  Price: "SOLD"
+                  Year: "2020"
+                  Description: "An emotional exploration of love and loss."
+            - Id: 18
+                  Slug: "feel-your-feelings"
+                  Main_image: "03_sold.jpg"
+                  Sold: true
+                  Other_images: []
+                  Name: "Feel your feelings"
+                  Materials: "Acrylic on 9 canvases"
+                  Size: "20x20 cm each x 9 pieces"
+                  Price: "SOLD"
+                  Year: "2024"
+                  Description: "A multi-panel exploration of friendship and connection. The painting consists of nine separate canvases that together create a whole."

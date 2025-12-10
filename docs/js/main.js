@@ -56,12 +56,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateCarouselText(lang) {
         document.querySelectorAll('.carousel-caption').forEach(caption => {
-            const id = caption.getAttribute('data-id');
-            if (id && translations[lang]) {
-                const title = translations[lang][`p_${id}_title`];
-                const desc = translations[lang][`p_${id}_desc`];
-                if (title) caption.querySelector('h3').innerHTML = title;
-                if (desc) caption.querySelector('p').innerHTML = desc;
+            const id = parseInt(caption.getAttribute('data-id'));
+            if (id && typeof paintingsData !== 'undefined' && paintingsData[lang]) {
+                // Search in both regions
+                let painting = null;
+                if (paintingsData[lang].europe) {
+                    painting = paintingsData[lang].europe.find(p => p.id === id);
+                }
+                if (!painting && paintingsData[lang].russia) {
+                    painting = paintingsData[lang].russia.find(p => p.id === id);
+                }
+                if (painting) {
+                    caption.querySelector('h3').textContent = painting.name;
+                }
             }
         });
     }
@@ -89,23 +96,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextButton = document.querySelector('.carousel-btn.next');
     const prevButton = document.querySelector('.carousel-btn.prev');
     
-    // Image list with IDs
-    const paintings = [
-        { id: 1, src: '1.jpg' }, { id: 2, src: '2.jpg' }, { id: 3, src: '3.jpg' }, { id: 4, src: '4.jpg' },
-        { id: 5, src: '5.jpg' }, { id: 6, src: '6.jpg' }, { id: 7, src: '7.jpg' }, { id: 8, src: '8.jpg' },
-        { id: 9, src: '9.jpg' }, { id: 10, src: '10.jpg' }, { id: 11, src: '11.jpg' }, { id: 12, src: '12.jpg' },
-        { id: 13, src: '13.jpg' }, { id: 14, src: '14.jpg' }, { id: 15, src: '15.jpg' }, { id: 16, src: '16.jpg' }
-    ];
+    // Use paintingsData if available, otherwise fallback (or empty)
+    // We use 'en' as default source for structure, but text will be updated
+    let paintingsSource = [];
+    if (typeof paintingsData !== 'undefined' && paintingsData['en']) {
+        // Combine both regions for carousel
+        if (paintingsData['en'].europe) {
+            paintingsSource = paintingsSource.concat(paintingsData['en'].europe);
+        }
+        if (paintingsData['en'].russia) {
+            paintingsSource = paintingsSource.concat(paintingsData['en'].russia);
+        }
+    }
 
-    if (track && paintings.length > 0) {
+    if (track && paintingsSource.length > 0) {
         // Populate carousel
-        paintings.forEach(p => {
+        paintingsSource.forEach(p => {
             const li = document.createElement('li');
             li.classList.add('carousel-slide');
             
             const img = document.createElement('img');
-            img.src = `assets/paintings/${p.src}`;
-            img.alt = `Painting ${p.id}`;
+            img.src = `assets/paintings/${p.main_image}`;
+            img.alt = p.name;
             img.loading = 'lazy';
             
             const caption = document.createElement('div');
@@ -113,10 +125,9 @@ document.addEventListener('DOMContentLoaded', () => {
             caption.setAttribute('data-id', p.id);
             
             const h3 = document.createElement('h3');
-            const desc = document.createElement('p');
+            // Only Name is required for carousel as per request
             
             caption.appendChild(h3);
-            caption.appendChild(desc);
             
             li.appendChild(img);
             li.appendChild(caption);
@@ -208,6 +219,69 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (prevButton) prevButton.click();
             }
         }
+
+        // --- Mouse Drag Support ---
+        let isDragging = false;
+        let dragStartX = 0;
+        let dragCurrentX = 0;
+        let dragStartScrollLeft = 0;
+
+        swipeArea.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            dragStartX = e.pageX;
+            dragCurrentX = e.pageX;
+            dragStartScrollLeft = currentIndex;
+            swipeArea.style.cursor = 'grabbing';
+            e.preventDefault();
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            dragCurrentX = e.pageX;
+        });
+
+        document.addEventListener('mouseup', () => {
+            if (!isDragging) return;
+            isDragging = false;
+            swipeArea.style.cursor = 'grab';
+            
+            const threshold = 50;
+            const dragDistance = dragCurrentX - dragStartX;
+            
+            if (dragDistance < -threshold) {
+                if (nextButton) nextButton.click();
+            } else if (dragDistance > threshold) {
+                if (prevButton) prevButton.click();
+            }
+        });
+
+        swipeArea.style.cursor = 'grab';
+
+        // --- Auto-play carousel ---
+        let autoplayInterval;
+        
+        function startAutoplay() {
+            autoplayInterval = setInterval(() => {
+                if (nextButton) nextButton.click();
+            }, 3000); // Every 3 seconds
+        }
+        
+        function stopAutoplay() {
+            clearInterval(autoplayInterval);
+        }
+        
+        // Start autoplay
+        startAutoplay();
+        
+        // Pause on hover
+        swipeArea.addEventListener('mouseenter', stopAutoplay);
+        swipeArea.addEventListener('mouseleave', startAutoplay);
+        
+        // Pause on touch
+        swipeArea.addEventListener('touchstart', stopAutoplay, { passive: true });
+        swipeArea.addEventListener('touchend', () => {
+            setTimeout(startAutoplay, 3000); // Resume after 3s
+        }, { passive: true });
         
         setTimeout(updateCarousel, 100);
     }

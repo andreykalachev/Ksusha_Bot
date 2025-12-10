@@ -64,3 +64,4 @@ screen -S ksusha -dm bash -lc "source ksusha_env.sh && venv/bin/python bot.py"
 
 - **Minimize comments**: Add comments only for critical logic or non-obvious code. Avoid excessive or obvious comments.
 - **Avoid try/except**: Do not use try/except unless error handling is absolutely necessary for user experience or data integrity.
+- **File updates**: Never use terminal commands (like `sed`, `awk`, `perl`, etc.) to update file contents. Always use file editing tools directly.

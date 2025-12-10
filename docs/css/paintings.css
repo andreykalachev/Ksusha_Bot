@@ -1,0 +1,502 @@
+/* Gallery Grid Styles */
+.gallery-page-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.gallery-section-header {
+    grid-column: 1 / -1;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 30px 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--text-color);
+}
+
+.gallery-section-header:first-child {
+    margin-top: 0;
+}
+
+.gallery-item {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    background: #fff;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.03);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+    padding: 20px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: flex-end;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    font-family: var(--font-heading);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* Sold Badge */
+.gallery-item.sold {
+    opacity: 0.75;
+}
+
+.sold-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(135deg, #e63946, #d62828);
+    color: white;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(230, 57, 70, 0.4);
+    z-index: 10;
+    pointer-events: none;
+    text-transform: uppercase;
+}
+
+.gallery-item.sold img {
+    filter: grayscale(30%);
+}
+
+.gallery-item.sold:hover img {
+    filter: grayscale(20%);
+}
+
+/* Painting Modal */
+.painting-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    overflow-y: auto;
+    overflow-x: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    -webkit-overflow-scrolling: touch;
+}
+
+.painting-modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.painting-modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 40px;
+    background: transparent;
+}
+
+.painting-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: var(--text-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1010;
+    transition: transform 0.3s ease;
+}
+
+.painting-modal-close:hover {
+    transform: rotate(90deg);
+}
+
+.painting-modal-body {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 60px;
+    align-items: start;
+    margin-top: 20px;
+}
+
+/* Modal Image Section */
+.painting-modal-image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.painting-modal-main-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.painting-modal-main-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.modal-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.painting-modal-main-image-wrapper:hover .modal-nav-btn {
+    opacity: 1;
+}
+
+.modal-nav-btn:hover {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.modal-nav-btn.prev { left: 20px; }
+.modal-nav-btn.next { right: 20px; }
+
+.painting-modal-thumbnails {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px; /* Increased padding to prevent border clipping on scale */
+    scrollbar-width: thin;
+}
+
+.painting-modal-thumbnails img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 4px;
+    opacity: 0.6;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.painting-modal-thumbnails img:hover,
+.painting-modal-thumbnails img.active {
+    opacity: 1;
+    transform: scale(1.05);
+    border: 2px solid var(--primary-color);
+}
+
+/* Modal Info Section */
+.painting-modal-info {
+    padding-top: 20px;
+    animation: slideInRight 0.5s ease;
+}
+
+.painting-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.painting-meta {
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+    color: var(--text-light);
+    border-left: 3px solid var(--primary-color);
+    padding-left: 15px;
+}
+
+.painting-meta p {
+    margin-bottom: 5px;
+}
+
+.painting-price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: var(--text-color);
+    font-family: var(--font-heading);
+}
+
+.painting-price.sold {
+    font-weight: 600;
+}
+
+.sold-status {
+    display: inline-block;
+    background: linear-gradient(135deg, #e63946, #d62828);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 8px rgba(230, 57, 70, 0.3);
+}
+
+.painting-description {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    white-space: pre-line; /* Preserves newlines from data */
+    color: var(--text-color);
+}
+
+.painting-social-share {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.social-share-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--bg-light);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-share-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+.social-share-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(230, 126, 34, 0.3);
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Responsive Modal & Grid */
+@media (max-width: 900px) {
+    .painting-modal-body {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .painting-modal-main-image-wrapper {
+        height: 50vh;
+    }
+    
+    .painting-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-page-grid {
+        grid-template-columns: 1fr;
+        gap: 5vw;
+    }
+
+    .gallery-item img {
+        height: auto;
+        aspect-ratio: 4/5;
+    }
+
+    .gallery-overlay {
+        opacity: 1;
+        background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    }
+
+    .painting-modal-content {
+        padding: 2vw;
+        width: 100vw;
+        max-width: 100%;
+        min-height: 100vh;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .painting-modal-close {
+        position: fixed;
+        top: 2vw;
+        right: 2vw;
+        font-size: clamp(18px, 5vw, 24px);
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 50%;
+        width: clamp(32px, 9vw, 40px);
+        height: clamp(32px, 9vw, 40px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        z-index: 1020;
+    }
+
+    .painting-modal-body {
+        margin-top: 12vw;
+        gap: 3vw;
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 100vw;
+        box-sizing: border-box;
+    }
+
+    .painting-modal-image-container {
+        width: 100%;
+        max-width: 100vw;
+        gap: 3vw;
+        box-sizing: border-box;
+    }
+
+    .painting-modal-main-image-wrapper {
+        height: auto;
+        max-height: 35vh;
+        width: 96vw;
+        max-width: 96vw;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    .painting-modal-main-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .modal-nav-btn {
+        opacity: 1 !important;
+        width: clamp(28px, 8vw, 36px);
+        height: clamp(28px, 8vw, 36px);
+        font-size: clamp(0.9rem, 3vw, 1.2rem);
+        background: rgba(255, 255, 255, 0.9);
+        z-index: 100;
+    }
+
+    .modal-nav-btn.prev { left: 2vw; }
+    .modal-nav-btn.next { right: 2vw; }
+
+    .painting-modal-thumbnails {
+        gap: 2vw;
+        padding: 2vw;
+    }
+
+    .painting-modal-thumbnails img {
+        width: clamp(50px, 15vw, 70px);
+        height: clamp(50px, 15vw, 70px);
+    }
+
+    .painting-modal-info {
+        width: 100%;
+        padding: 0 2vw;
+        box-sizing: border-box;
+    }
+
+    .painting-title {
+        font-size: clamp(1.3rem, 5vw, 2rem);
+        margin-bottom: 2vw;
+        line-height: 1.2;
+    }
+
+    .painting-meta {
+        margin-bottom: 4vw;
+        font-size: clamp(0.85rem, 3.5vw, 1rem);
+    }
+
+    .painting-price {
+        font-size: clamp(1.1rem, 4vw, 1.5rem);
+        margin-bottom: 3vw;
+    }
+    
+    .painting-description {
+        font-size: clamp(0.9rem, 3.5vw, 1.05rem);
+        line-height: 1.6;
+    }
+
+    .painting-social-share {
+        gap: 3vw;
+        margin-top: 5vw;
+        padding-top: 4vw;
+        justify-content: center;
+    }
+
+    .social-share-btn {
+        width: clamp(40px, 11vw, 50px);
+        height: clamp(40px, 11vw, 50px);
+    }
+
+    .social-share-btn svg {
+        width: clamp(20px, 6vw, 26px);
+        height: clamp(20px, 6vw, 26px);
+    }
+
+    .gallery-section-header {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+        margin: 5vw 0 4vw 0;
+    }
+}

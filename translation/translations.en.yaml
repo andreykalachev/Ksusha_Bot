@@ -2,51 +2,51 @@
 ABOUT_TEXT: |
   Hello & welcome! ✨
 
-  I'm Ksenia ALF — a third‑generation artist painting in a soft, abstract style. I create artworks that celebrate femininity, warmth and emotional color.
+  I'm Ksenia ALF - a third‑generation artist painting in a soft, abstract style. I create artworks that celebrate femininity, warmth and emotional color.
 
   This bot is your little creative studio: explore paintings, learn through short guides, try a playful art-style quiz and connect with me for commissions or sessions. Tap around and let's discover what colors say about you! 🎨💬
 INFO_TEXT: |
-  I'm Ksenia ALF — artist, art therapist and teacher. My journey in art is a journey to myself, to feelings and to the freedom of self-expression.
+  I'm Ksenia ALF - artist, art therapist and teacher. My journey in art is a journey to myself, to feelings and to the freedom of self-expression.
   
   Here you can learn more about me and download my portfolio (PDF).
   
   Want to know more? Just send me a message!
 SERVICES_TEXT: |
-  I’m happy to see you here — welcome to a cozy space of creativity and color 🎨✨
+  I’m happy to see you here - welcome to a cozy space of creativity and color 🎨✨
 
   Here’s how we can work together:
 
-  🧡 Online Art-Therapy — 35€/hour
+  🧡 Online Art-Therapy - 35€/hour
 
-  We’ll gently explore your request, use MOСK cards, draw your current point A and create point B — with a clear and inspiring strategy to reach it.
+  We’ll gently explore your request, use MOСK cards, draw your current point A and create point B - with a clear and inspiring strategy to reach it.
 
-  🎨 Online Painting — 35€/hour
+  🎨 Online Painting - 35€/hour
 
   Just enjoy painting and colors, or learn something specific! Art school preparation, mastering techniques, or simply drawing for pleasure.
 
-  🍊 Offline Meetings — 40€/hour
+  🍊 Offline Meetings - 40€/hour
 
   Individual master class, art-therapy session, creating your personal path through colors, preparation for competitions or admission.
   Warm communication and lots of inspiration!
 
   Ready to begin? Send me a message @kseniialf
 PAINTINGS_TEXT: |
-  My works celebrate softness, femininity and emotional warmth — each canvas is an invitation to feel. 💗
+  My works celebrate softness, femininity and emotional warmth - each canvas is an invitation to feel. 💗
 
   Services I offer:
   • Visualization of how a piece will look in your space 🏡
   • Commissioned artworks made just for you ✨
   • Collaborations with designers, galleries and brands 🌸
 
-  Worldwide shipping available 🌍 — installment options on request. For inquiries, DMs are open: @kseniialf 💌
-CONTACTS_TEXT: "I’m always happy to connect — tap any button below to reach me directly. Let’s make something beautiful together! 🤍"
+  Worldwide shipping available 🌍 - installment options on request. For inquiries, DMs are open: @kseniialf 💌
+CONTACTS_TEXT: "I’m always happy to connect - tap any button below to reach me directly. Let’s make something beautiful together! 🤍"
 GUIDE_GREET: |
   Hello, beautiful! ❤️
 
-  So glad you're curious about color and yourself. This guide is a gentle companion for self‑discovery through art — small prompts, reflections and playful exercises to help you see and feel.
+  So glad you're curious about color and yourself. This guide is a gentle companion for self‑discovery through art - small prompts, reflections and playful exercises to help you see and feel.
 GUIDE_TEXT: |
   Hi, guide is unfortunately not yet translated to English:(
-ARTICLES_MENU_GREETING: "Choose an article or take the quiz — let's discover your colors together! 🎨✨"
+ARTICLES_MENU_GREETING: "Choose an article or take the quiz - let's discover your colors together! 🎨✨"
 REVIEWS_TEXT: |
   Here you can read reviews about my work on Profi.ru. Thank you to everyone who shares their impressions!
 MINI_SHOP_TEXT: |
@@ -76,20 +76,20 @@ HELP_TEXT: |
   Hi! 👋 I'm your friendly art assistant.
 
   Here are all available commands:
-  - /start — open the main menu
-  - /help — show help
-  - /portfolio — portfolio
-  - /services — services
-  - /products — free products
-  - /contacts — contacts
-  - /reviews — reviews
-  - /minishop — mini shop
-  - /info — about me
-  - /certificate — certificate
-  - /inspiration — inspiration
-  - /statistics — statistics
+  - /start - open the main menu
+  - /help - show help
+  - /portfolio - portfolio
+  - /services - services
+  - /products - free products
+  - /contacts - contacts
+  - /reviews - reviews
+  - /minishop - mini shop
+  - /info - about me
+  - /certificate - certificate
+  - /inspiration - inspiration
+  - /statistics - statistics
 
-  Use the menu buttons or commands above to navigate. If you have any questions — just ask!
+  Use the menu buttons or commands above to navigate. If you have any questions - just ask!
 
 # Feature Labels
 LABEL_INFO: "🧑‍🎨 About me"
@@ -125,7 +125,7 @@ LANG_RU: "Русский 🇷��"
 # Inspiration Cards
 INSPIRATION_CARDS:
   - color: "Deep Red"
-    quote: "«If you feel the fire — let it illuminate, not burn.»"
+    quote: "«If you feel the fire - let it illuminate, not burn.»"
     exercise: "Draw your inner fire today using only lines and spots. Don't think about the form - let your hand move to the beat of your feelings."
   - color: "Scarlet Red"
     quote: "«Passion is a fire that asks no permission to burn.»"
@@ -149,7 +149,7 @@ INSPIRATION_CARDS:
     quote: "«Your thoughts deserve to be heard - at least by yourself.»"
     exercise: "Take a sheet and make a «thought sketch» - write and draw everything that comes to mind for 3 minutes straight, without stopping."
   - color: "Golden Yellow"
-    quote: "«What is truly valuable is often closer than it seems — you just need to stop and feel this moment.»"
+    quote: "«What is truly valuable is often closer than it seems - you just need to stop and feel this moment.»"
     exercise: "Draw something today that you are grateful for. It doesn't have to be literal - it can be a symbol or a metaphor."
   - color: "Emerald Green"
     quote: "«Growth is not always visible, but it is always happening.»"

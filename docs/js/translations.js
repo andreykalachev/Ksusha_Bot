@@ -12,7 +12,7 @@ const translations = {
         hero_btn_prices: "Стоимость услуг",
         about_title: "Знакомство",
         about_text_1: "Я Ксения ALF, художник в третьем поколении. Пишу абстрактные картины, выражая чувства через форму и цвет.",
-        about_text_2: "Для меня искусство — это путь к себе, к своим чувствам и свободе самовыражения. Я помогаю другим найти этот путь через арт-терапию и обучение.",
+        about_text_2: "Для меня искусство - это путь к себе, к своим чувствам и свободе самовыражения. Я помогаю другим найти этот путь через арт-терапию и обучение.",
         
         // Artist Statement & CV
         statement_title: "Творческое заявление",
@@ -27,17 +27,17 @@ const translations = {
         
         cv_edu_1: "Магистратура по архитектуре (Генуя, Италия)<br>Государственный университет Генуи",
         cv_edu_2: "Программа обмена Erasmus+ по архитектуре (Порту, Португалия)<br>Университет Фернандо Пессоа",
-        cv_edu_3: "Бакалавриат \"Интерьер и Оборудование\" (Санкт-Петербург, Россия)<br>Санкт-Петербургская государственная художественно-промышленная академия имени А. Л. Штиглица",
+        cv_edu_3: "Бакалавриат «Интерьер и Оборудование» (Санкт-Петербург, Россия)<br>Санкт-Петербургская государственная художественно-промышленная академия имени А. Л. Штиглица",
         
-        cv_exh_1: "Персональная выставка “(НЕ) ВСЕРЬЕЗ” в ДМ “Пулковец”.<br>г. Санкт-Петербург.",
-        cv_exh_2: "Персональная выставка в кафе-галерее “Casimir”.<br>г. Санкт-Петербург.",
+        cv_exh_1: "Персональная выставка «(НЕ) ВСЕРЬЕЗ» в ДМ «Пулковец».<br>г. Санкт-Петербург.",
+        cv_exh_2: "Персональная выставка в кафе-галерее «Casimir».<br>г. Санкт-Петербург.",
         
         cv_event_1: "2010. Участие в выставке «Мой мир» в Институте Гуманитарного образования.<br>г. Санкт-Петербург.",
-        cv_event_2: "2012. Выставка в Эрмитаже. “Мартовский Кот”.<br>г. Санкт-Петербург.",
+        cv_event_2: "2012. Выставка в Эрмитаже. «Мартовский Кот».<br>г. Санкт-Петербург.",
         cv_event_3: "2013. Районный этап городской акции «Блокадная ласточка». Диплом первой степени.<br>г. Санкт-Петербург.",
         cv_event_4: "2018. Участник благотворительной акции «Моя любовь, футбол и кот», приуроченной к 22-му чемпионату по футболу FIFA.<br>г. Санкт-Петербург.",
         cv_event_5: "2019. Участник реалити-шоу «Модный Интерио-Хаус».<br>г. Санкт-Петербург.",
-        cv_event_6: "2021. Участник выставки “Зооарт” в Музее скульптуры.<br>г. Санкт-Петербург.",
+        cv_event_6: "2021. Участник выставки «Зооарт» в Музее скульптуры.<br>г. Санкт-Петербург.",
         cv_event_7: "2021. Выставка в Союзе художников России «Молодость Петербурга».<br>г. Санкт-Петербург.",
         cv_event_8: "2021. Спикер на пресс-конференции ИТАР ТАС на тему современного искусства и анималистики в живописи.<br>г. Санкт-Петербург.",
         cv_event_9: "2021. Выставка «Конкурс дипломных работ СПГХПА имени А.Л. Штиглица». Третье место в номинации «Лучший проект интерьеров».<br>г. Санкт-Петербург.",
@@ -47,6 +47,27 @@ const translations = {
         gallery_desc: "",
         gallery_btn_behance: "Смотреть портфолио на Behance",
         gallery_view_all: "Смотреть все картины",
+        gallery_europe_title: "Доставка из Европы",
+        gallery_russia_title: "Доставка из России",
+        
+        // Shipping Info
+        shipping_title: "Условия доставки и логистика",
+        shipping_intro: "Мои картины находятся в студиях в трех городах: Санкт-Петербурге (Россия), Порту (Португалия) и Генуе (Италия). Ниже вы найдете детали отправки в зависимости от вашего региона.",
+        shipping_europe_title: "🇪🇺 Доставка по Европе и миру",
+        shipping_europe_from: "Отправка осуществляется из Порту (Португалия) или Генуи (Италия).",
+        shipping_europe_carriers: "Службы доставки: Мы используем надежные сервисы DHL, UPS или национальные почтовые службы (CTT, Poste Italiane) для обеспечения сохранности искусства.",
+        shipping_europe_time: "Сроки: В среднем 5–10 рабочих дней по Европе.",
+        shipping_europe_cost: "Стоимость: Начальная стоимость доставки — от 35€. Итоговая цена зависит от веса, габаритов картины и страны назначения.",
+        shipping_russia_title: "🇷🇺 Доставка из России",
+        shipping_russia_from: "Отправка осуществляется из Санкт-Петербурга.",
+        shipping_russia_domestic: "По России: Оптимальный вариант — курьерская служба СДЭК (до двери или до пункта выдачи). Это быстро, надежно и бережно по отношению к искусству.",
+        shipping_russia_international: "Из России в Европу/Мир: Отправка осуществляется службой EMS (Почта России).",
+        shipping_russia_important: "Важно: Для вывоза картин за границу оформляется обязательное разрешение Министерства Культуры РФ. Это может добавить к сроку доставки 1–2 недели.",
+        shipping_packaging_title: "Важная информация об упаковке",
+        shipping_packaging_intro: "В целях безопасности и оптимизации стоимости доставки, картины могут быть отправлены двумя способами:",
+        shipping_packaging_rolled: "В тубусе (в рулоне): Холст снимается с подрамника и сворачивается. Это самый безопасный способ для пересылки крупных форматов.",
+        shipping_packaging_stretched: "В полноценном размере: Картина отправляется на подрамнике в жесткой защитной упаковке.",
+        shipping_packaging_note: "Пожалуйста, уточните формат упаковки для конкретной картины перед оформлением заказа.",
         
         // Painting Descriptions (RU)
         p_1_title: "Пробуждение", p_1_desc: "Энергия начала нового дня",
@@ -124,24 +145,45 @@ const translations = {
         cv_edu_2: "Erasmus+ Exchange Program in Architecture (Porto, Portugal)<br>University Fernando Pessoa",
         cv_edu_3: "Bachelor's in \"Interior and Equipment\" (St. Petersburg, Russia)<br>St. Petersburg State Stieglitz Art and Industry Academy",
         
-        cv_exh_1: "Personal exhibition \"(NOT) SERIOUSLY\" at DM \"Pulkovets\". St. Petersburg.",
-        cv_exh_2: "Personal exhibition at cafe-gallery \"Casimir\". St. Petersburg.",
+        cv_exh_1: "Personal exhibition \"(NOT) SERIOUSLY\" at DM \"Pulkovets\".<br>St. Petersburg.",
+        cv_exh_2: "Personal exhibition at cafe-gallery \"Casimir\".<br>St. Petersburg.",
         
-        cv_event_1: "2010. Participation in the exhibition \"My World\" at the Institute of Humanitarian Education, St. Petersburg.",
-        cv_event_2: "2012. Exhibition at the Hermitage. \"March Cat\". St. Petersburg.",
-        cv_event_3: "2013. District stage of the city action \"Blockade Swallow\". First degree diploma. St. Petersburg.",
-        cv_event_4: "2018. Participant of the charity action \"My Love, Football and Cat\", dedicated to the 22nd FIFA World Cup. St. Petersburg.",
-        cv_event_5: "2019. Participant of the reality show \"Fashionable Interio-House\". St. Petersburg.",
-        cv_event_6: "2021. Participant of the exhibition \"Zooart\" at the Museum of Sculpture. St. Petersburg.",
-        cv_event_7: "2021. Exhibition at the Union of Artists of Russia \"Youth of St. Petersburg\". St. Petersburg.",
-        cv_event_8: "2021. Speaker at the ITAR TASS press conference on contemporary art and animalism in painting. St. Petersburg.",
-        cv_event_9: "2021. Exhibition \"Competition of diploma works of SPGHPA named after A.L. Stieglitz\". Third place in the nomination \"Best Interior Project\". St. Petersburg.",
-        cv_event_10: "2022. First degree diploma for the design project of the Academy of Theater Arts. St. Petersburg.",
+        cv_event_1: "2010. Participation in the exhibition \"My World\" at the Institute of Humanitarian Education.<br>St. Petersburg.",
+        cv_event_2: "2012. Exhibition at the Hermitage. \"March Cat\".<br>St. Petersburg.",
+        cv_event_3: "2013. District stage of the city action \"Blockade Swallow\". First degree diploma.<br>St. Petersburg.",
+        cv_event_4: "2018. Participant of the charity action \"My Love, Football and Cat\", dedicated to the 22nd FIFA World Cup.<br>St. Petersburg.",
+        cv_event_5: "2019. Participant of the reality show \"Fashionable Interio-House\".<br>St. Petersburg.",
+        cv_event_6: "2021. Participant of the exhibition \"Zooart\" at the Museum of Sculpture.<br>St. Petersburg.",
+        cv_event_7: "2021. Exhibition at the Union of Artists of Russia \"Youth of St. Petersburg\".<br>St. Petersburg.",
+        cv_event_8: "2021. Speaker at the ITAR TASS press conference on contemporary art and animalism in painting.<br>St. Petersburg.",
+        cv_event_9: "2021. Exhibition \"Competition of diploma works of SPGHPA named after A.L. Stieglitz\". Third place in the nomination \"Best Interior Project\".<br>St. Petersburg.",
+        cv_event_10: "2022. First degree diploma for the design project of the Academy of Theater Arts.<br>St. Petersburg.",
 
         gallery_title: "Catalog",
         gallery_desc: "",
         gallery_btn_behance: "View Portfolio on Behance",
         gallery_view_all: "View All Paintings",
+        gallery_europe_title: "Shipping from Europe",
+        gallery_russia_title: "Shipping from Russia",
+        
+        // Shipping Info
+        shipping_title: "Shipping & Delivery",
+        shipping_intro: "My artworks are stored in studios across three locations: St. Petersburg (Russia), Porto (Portugal), and Genoa (Italy). Below you will find specific shipping details based on your location and the artwork's origin.",
+        shipping_europe_title: "🇪🇺 From Europe (Portugal & Italy)",
+        shipping_europe_from: "Ships from Porto or Genoa.",
+        shipping_europe_carriers: "Carriers: We use trusted services like DHL, UPS, or National Post (CTT, Poste Italiane) to ensure safe handling.",
+        shipping_europe_time: "Delivery Time: Typically 5–10 business days within Europe.",
+        shipping_europe_cost: "Cost: Shipping starts from €35. The final price depends on the weight, dimensions, and destination country.",
+        shipping_russia_title: "🇷🇺 From Russia (St. Petersburg)",
+        shipping_russia_from: "Ships from St. Petersburg.",
+        shipping_russia_domestic: "Domestic (within Russia): We use CDEK (door-to-door or pickup point). It is a fast and reliable option.",
+        shipping_russia_international: "International (Russia to EU/World): Shipping is handled via EMS (Russian Post).",
+        shipping_russia_important: "Please Note: International shipments from Russia require an export permit from the Ministry of Culture. Processing this document usually takes 1–2 weeks before the artwork can be dispatched.",
+        shipping_packaging_title: "Important Packaging Information",
+        shipping_packaging_intro: "To ensure maximum safety and optimize shipping costs, artworks may be shipped in two ways:",
+        shipping_packaging_rolled: "Rolled in a Tube: The canvas is removed from the stretcher bars and rolled. This is the safest method for large-scale works.",
+        shipping_packaging_stretched: "Ready to Hang: The artwork is shipped stretched in a secure, reinforced box.",
+        shipping_packaging_note: "Please contact me directly to confirm the packaging format for your specific artwork before placing an order.",
 
         // Painting Descriptions (EN)
         p_1_title: "Awakening", p_1_desc: "Energy of a new day",
@@ -187,6 +229,6 @@ const translations = {
         contacts_desc: "Write to me to discuss a painting commission, sign up for training, art therapy, or just chat about art.",
         contacts_bot_promo: "If you want to be the first to access free products and unique offers - join the telegram bot",
         footer_rights: "&copy; 2025 Kseniia ALF. All rights reserved.",
-        instagram_url: "https://www.instagram.com/kseniialf"
+        instagram_url: "https://www.instagram.com/kseniialf.art"
     }
 };
