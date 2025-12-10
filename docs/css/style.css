@@ -679,6 +679,11 @@ ul {
 
 @media (max-width: 900px) {
     /* Mobile Hero */
+    .shape-1,
+    .shape-2 {
+        display: none;
+    }
+    
     .hero-content-wrapper {
         flex-direction: column;
         justify-content: center;
@@ -717,11 +722,34 @@ ul {
     .hero-btn-group {
         justify-content: center;
     }
+    
+    .btn {
+        padding: 12px 28px;
+        font-size: 0.7rem;
+        letter-spacing: 1.5px;
+    }
 }
 
 @media (max-width: 768px) {
-    h1 { font-size: 2.5rem; }
-    h2 { font-size: 2rem; }
+    body {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.2rem; }
+    
+    .statement-content {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        padding: 25px;
+    }
+    
+    .statement-content p:first-child::first-letter {
+        font-size: 4rem;
+        margin-right: 8px;
+    }
     
     .grid-2 {
         grid-template-columns: 1fr;
@@ -815,5 +843,10 @@ ul {
         width: 100%;
         max-width: 280px;
         min-width: unset;
+    }
+    
+    .btn {
+        padding: 10px 24px;
+        font-size: 0.65rem;
     }
 }
