@@ -63,6 +63,14 @@ INSPIRATION_OUTRO: |
   Don't forget about today's task! 
   Kisses!😘
 CERTIFICATE_TEXT: "Use and enjoy! ✨"
+
+SUPPORT_TEXT: |
+  If you enjoy my art and would like to support me, I would be immensely grateful! 🧡
+  
+  Your support helps me create new works, develop projects, and share inspiration.
+
+SUPPORT_NOTE: "Supporting creator"
+
 INSPIRATION_TEXT: |
   WHERE TO FIND INSPIRATION?
 
@@ -109,11 +117,13 @@ LABEL_INSPIRATION: "Where to find inspiration?"
 LABEL_INSPIRATION_LINK: "Article"
 LABEL_INSPIRATION_GENERATOR: "✨ Inspiration for today"
 LABEL_INSPIRATION_NEW: "🔄 Generate New"
+LABEL_SUPPORT: "💵 Support"
+LABEL_SUPPORT_PAY: "💳 Support via Stripe"
 CONTACTS_BTN_TELEGRAM: "Telegram"
 CONTACTS_BTN_CHANNEL: "Telegram channel"
 CONTACTS_BTN_INSTAGRAM: "Instagram"
 CONTACTS_BTN_BEHANCE: "Behance"
-CONTACTS_BTN_EMAIL: "Email"
+CONTACTS_BTN_WEBSITE: "Website"
 
 # Navigation & System
 LABEL_BACK: "🔙 Back"

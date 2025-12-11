@@ -15,7 +15,7 @@ from pages.common import admin_file_handler, main_menu_command
 from utils.logging_config import configure_logging
 from pages.main_menu import menu_handler
 from pages.articles.menu import articles_handler
-from pages.commands import contacts_wrapper, articles_wrapper, paintings_wrapper, services_wrapper, mini_shop_wrapper, info_wrapper, reviews_wrapper
+from pages.commands import contacts_wrapper, articles_wrapper, paintings_wrapper, services_wrapper, mini_shop_wrapper, info_wrapper, reviews_wrapper, support_wrapper
 from pages.statistics import statistics_command, statistics_callback
 
 
@@ -33,7 +33,7 @@ def main() -> None:
     logger.info("ApplicationBuilder created")
 
     app.add_handler(CommandHandler("start", start))
-    app.add_handler(CallbackQueryHandler(menu_handler, pattern=r"^(info|services|paintings|contacts|articles|reviews|mini_shop|inspiration|back|set_lang_en|set_lang_ru|statistics)$"))
+    app.add_handler(CallbackQueryHandler(menu_handler, pattern=r"^(info|services|paintings|contacts|articles|reviews|mini_shop|inspiration|support|back|set_lang_en|set_lang_ru|statistics)$"))
     
     from pages.mini_shop import show_certificate
     app.add_handler(CallbackQueryHandler(show_certificate, pattern=r"^show_certificate$"))
@@ -49,6 +49,7 @@ def main() -> None:
     app.add_handler(CommandHandler('portfolio', paintings_wrapper))
     app.add_handler(CommandHandler('products', articles_wrapper))
     app.add_handler(CommandHandler('contacts', contacts_wrapper))
+    app.add_handler(CommandHandler('support', support_wrapper))
     app.add_handler(CommandHandler('minishop', mini_shop_wrapper))
     app.add_handler(CommandHandler('info', info_wrapper))
     app.add_handler(CommandHandler('reviews', reviews_wrapper))

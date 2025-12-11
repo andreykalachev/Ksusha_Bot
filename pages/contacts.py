@@ -12,7 +12,6 @@ TG_CHANNEL_URL = os.getenv("TG_CHANNEL_URL")
 INSTAGRAM_RU = os.getenv("INSTAGRAM_RU")
 INSTAGRAM_EN = os.getenv("INSTAGRAM_EN")
 BEHANCE_URL = os.getenv("BEHANCE_URL")
-EMAIL_COMPOSE_URL = os.getenv("EMAIL_COMPOSE_URL")
 
 
 def _build_contacts_payload(context: ContextTypes.DEFAULT_TYPE):
@@ -26,7 +25,6 @@ def _build_contacts_payload(context: ContextTypes.DEFAULT_TYPE):
         [InlineKeyboardButton(tl.load(tl.CONTACTS_BTN_CHANNEL, context), url=TG_CHANNEL_URL)],
         [InlineKeyboardButton(tl.load(tl.CONTACTS_BTN_INSTAGRAM, context), url=instagram)],
         [InlineKeyboardButton(tl.load(tl.CONTACTS_BTN_BEHANCE, context), url=BEHANCE_URL)],
-        [InlineKeyboardButton(tl.load(tl.CONTACTS_BTN_EMAIL, context), url=EMAIL_COMPOSE_URL)],
         [InlineKeyboardButton(tl.load(tl.LABEL_BACK, context), callback_data=common.MainMenuCallback.BACK.value)],
     ]
 

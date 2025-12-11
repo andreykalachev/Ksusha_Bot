@@ -50,15 +50,13 @@
 </head>
 <body>
 
-    <header class="site-header" style="position: relative; background: var(--bg-color);">
+    <header class="site-header">
         <nav class="container">
             <div class="logo"><a href="index.html">Kseniia ALF</a></div>
             <ul class="nav-links">
                 <li><a href="index.html" data-i18n="nav_home">Главная</a></li>
-                <li><a href="index.html#about" data-i18n="nav_about">Обо мне</a></li>
+                <li><a href="cv.html" data-i18n="nav_cv">Резюме</a></li>
                 <li><a href="paintings.html" data-i18n="nav_gallery">Картины</a></li>
-                <li><a href="index.html#services" data-i18n="nav_services">Услуги</a></li>
-                <li><a href="index.html#contacts" data-i18n="nav_contacts">Контакты</a></li>
                 <li class="lang-switcher">
                     <span class="lang-btn active" data-lang="ru">RU</span> | 
                     <span class="lang-btn" data-lang="en">EN</span>
@@ -75,7 +73,7 @@
     <main>
         <section class="section">
             <div class="container">
-                <h1 data-i18n="gallery_title" style="text-align: center; margin-bottom: 40px;">Мои картины</h1>
+                <h2 data-i18n="gallery_title" style="text-align:left; margin-bottom: 40px;">Каталог</h2>
                 
                 <div class="gallery-page-grid" id="gallery-grid">
                     <!-- Items injected by JS -->
@@ -85,18 +83,18 @@
         <!-- Shipping Information Section -->
         <section class="section shipping-info" style="background: var(--bg-secondary); padding: 60px 0;">
             <div class="container">
-                <h2 data-i18n="shipping_title" style="text-align: center; margin-bottom: 30px;">Условия доставки и логистика</h2>
-                <p data-i18n="shipping_intro" style="text-align: center; max-width: 800px; margin: 0 auto 40px; opacity: 0.9;">
+                    <h2 data-i18n="shipping_title" style="text-align:left; margin-bottom: 30px;">Условия доставки и логистика</h2>
+                <p data-i18n="shipping_intro" style="text-align: left; max-width: 800px; margin: 0 0 40px 0; opacity: 0.9;">
                     Мои картины находятся в студиях в трех городах: Санкт-Петербурге (Россия), Порту (Португалия) и Генуе (Италия). Ниже вы найдете детали отправки в зависимости от вашего региона.
                 </p>
                 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 40px;">
                     <!-- Europe Shipping -->
                     <div class="shipping-card" style="background: var(--bg-color); padding: 30px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                        <h3 data-i18n="shipping_europe_title" style="margin-bottom: 20px; color: var(--accent-color);">🇪🇺 Доставка по Европе и миру</h3>
+                            <h3 data-i18n="shipping_europe_title" class="cv-shipping-header" style="text-align:left;">🇪🇺 Доставка по Европе и миру</h3>
                         <p data-i18n="shipping_europe_from" style="margin-bottom: 15px;"><strong>Отправка осуществляется из Порту (Португалия) или Генуи (Италия).</strong></p>
                         <ul style="list-style: none; padding: 0;">
-                            <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                                <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
                                 <span style="position: absolute; left: 0;">•</span>
                                 <span data-i18n="shipping_europe_carriers">Службы доставки: Мы используем надежные сервисы DHL, UPS или национальные почтовые службы (CTT, Poste Italiane) для обеспечения сохранности искусства.</span>
                             </li>
@@ -113,10 +111,10 @@
                     
                     <!-- Russia Shipping -->
                     <div class="shipping-card" style="background: var(--bg-color); padding: 30px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                        <h3 data-i18n="shipping_russia_title" style="margin-bottom: 20px; color: var(--accent-color);">🇷🇺 Доставка из России</h3>
+                            <h3 data-i18n="shipping_russia_title" class="cv-shipping-header" style="text-align:left;">🇷🇺 Доставка из России</h3>
                         <p data-i18n="shipping_russia_from" style="margin-bottom: 15px;"><strong>Отправка осуществляется из Санкт-Петербурга.</strong></p>
                         <ul style="list-style: none; padding: 0;">
-                            <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
+                                <li style="margin-bottom: 10px; padding-left: 20px; position: relative;">
                                 <span style="position: absolute; left: 0;">•</span>
                                 <span data-i18n="shipping_russia_domestic">По России: Оптимальный вариант — курьерская служба СДЭК (до двери или до пункта выдачи). Это быстро, надежно и бережно по отношению к искусству.</span>
                             </li>

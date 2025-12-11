@@ -1,6 +1,6 @@
 from telegram import Update
 from telegram.ext import ContextTypes
-from pages.commands import articles_wrapper, contacts_wrapper, paintings_wrapper, services_wrapper
+from pages.commands import articles_wrapper, contacts_wrapper, paintings_wrapper, services_wrapper, support_wrapper
 from pages.info import show_info
 from pages import common
 from translation import translation_loader as tl
@@ -33,6 +33,8 @@ async def menu_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     elif data == common.MainMenuCallback.INSPIRATION.value:
         from pages.inspiration import show_inspiration
         await show_inspiration(update, context)
+    elif data == common.MainMenuCallback.SUPPORT.value:
+        await support_wrapper(update, context)
     elif data == common.MainMenuCallback.BACK.value:
         statistics.increment_page(Page.MAIN)
         greeting = tl.load(tl.ABOUT_TEXT, context)

@@ -9,12 +9,14 @@ from typing import Tuple
 
 
 BEHANCE_URL = os.getenv("BEHANCE_URL")
+WEBSITE_URL = os.getenv("WEBSITE_URL")
 
 
 def _build_paintings_payload(context: ContextTypes.DEFAULT_TYPE) -> Tuple[str, InlineKeyboardMarkup]:
     statistics.increment_page(Page.PAINTINGS)
 
     keyboard = InlineKeyboardMarkup([
+        [InlineKeyboardButton(tl.load(tl.CONTACTS_BTN_WEBSITE, context), url=WEBSITE_URL)],
         [InlineKeyboardButton(tl.load(tl.CONTACTS_BTN_BEHANCE, context), url=BEHANCE_URL)],
         [InlineKeyboardButton(tl.load(tl.LABEL_BACK, context), callback_data=common.MainMenuCallback.BACK.value)],
     ])

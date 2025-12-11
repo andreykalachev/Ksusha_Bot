@@ -2,7 +2,8 @@ const translations = {
     ru: {
         nav_home: "Главная",
         nav_about: "Обо мне",
-        nav_gallery: "Картины",
+        nav_cv: "Резюме",
+        nav_gallery: "Каталог",
         nav_services: "Услуги",
         nav_contacts: "Контакты",
         hero_title: "Пространство<br>творчества и цвета",
@@ -96,11 +97,11 @@ const translations = {
         service_art_therapy_price: "30€ / час",
         service_art_therapy_desc: "Мягко и бережно разберём твой запрос, а далее, используя МАК-карты и психологию цвета, нарисуем точку «А» и создадим точку «Б» - с вдохновляющим путём, как к ней прийти.",
         
-        service_offline_ind_title: "Оффлайн-встречи индивидуально",
+        service_offline_ind_title: "Живые встречи индивидуально",
         service_offline_ind_price: "40€ / час",
         service_offline_ind_desc: "Здесь возможно все - создание личного творческого пути, консультация, помощь в подготовке к конкурсам или поступлению!",
         
-        service_offline_group_title: "Оффлайн-встречи групповые",
+        service_offline_group_title: "Живые встречи групповые",
         service_offline_group_price: "20€ / час с человека",
         service_offline_group_desc: "Мастер-класс, девичник, день рождения, тим билдинг - организуем любое арт-мероприятие на ваш вкус. Гарантирую вдохновение и много красок!",
         
@@ -118,7 +119,8 @@ const translations = {
     en: {
         nav_home: "Home",
         nav_about: "About Me",
-        nav_gallery: "Paintings",
+        nav_cv: "CV",
+        nav_gallery: "Catalog",
         nav_services: "Services",
         nav_contacts: "Contacts",
         hero_title: "Space of<br>Creativity and Color",
@@ -212,11 +214,11 @@ const translations = {
         service_art_therapy_price: "30€ / hour",
         service_art_therapy_desc: "We will gently and carefully analyze your request, and then, using MAC cards and color psychology, we will draw point \"A\" and create point \"B\" - with an inspiring way to get to it.",
         
-        service_offline_ind_title: "Offline Individual Meetings",
+        service_offline_ind_title: "In-person Individual Meetings",
         service_offline_ind_price: "40€ / hour",
         service_offline_ind_desc: "Everything is possible here - creating a personal creative path, consultation, help in preparing for competitions or admission!",
         
-        service_offline_group_title: "Offline Group Meetings",
+        service_offline_group_title: "In-person Group Meetings",
         service_offline_group_price: "20€ / hour per person",
         service_offline_group_desc: "Master class, bachelorette party, birthday, team building - we will organize any art event to your taste. I guarantee inspiration and lots of colors!",
         

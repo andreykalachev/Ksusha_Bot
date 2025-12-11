@@ -72,6 +72,11 @@ INSPIRATION_OUTRO: |
   Целую!😘
 CERTIFICATE_TEXT: "Используйте и радуйтесь! ✨"
 
+SUPPORT_TEXT: |
+  Если вам нравится мое творчество и вы хотите поддержать меня, буду безмерно благодарна! 🧡
+  
+  Ваша поддержка помогает мне создавать новые работы, развивать проекты и делиться вдохновением.
+
 INSPIRATION_TEXT: |
   ГДЕ ЧЕРПАТЬ ВДОХНОВЕНИЕ?
 
@@ -118,11 +123,13 @@ LABEL_INSPIRATION: "Где черпать вдохновение?"
 LABEL_INSPIRATION_LINK: "Перейти к файлу"
 LABEL_INSPIRATION_GENERATOR: "✨ Вдохновение на сегодня"
 LABEL_INSPIRATION_NEW: "🔄 Сгенерировать новое"
+LABEL_SUPPORT: "💵 Поддержать"
+LABEL_SUPPORT_PAY: "💳 Поддержать через Stripe"
 CONTACTS_BTN_TELEGRAM: "Telegram"
 CONTACTS_BTN_CHANNEL: "Канал в Telegram"
 CONTACTS_BTN_INSTAGRAM: "Instagram"
 CONTACTS_BTN_BEHANCE: "Behance"
-CONTACTS_BTN_EMAIL: "Email"
+CONTACTS_BTN_WEBSITE: "Сайт"
 
 # Navigation & System
 LABEL_BACK: "🔙 Назад"

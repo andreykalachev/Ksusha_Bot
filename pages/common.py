@@ -17,6 +17,7 @@ class MainMenuCallback(str, Enum):
     REVIEWS = 'reviews'
     MINI_SHOP = 'mini_shop'
     INSPIRATION = 'inspiration'
+    SUPPORT = 'support'
     CERTIFICATE = 'show_certificate'
     BACK = 'back'
     STATISTICS = 'statistics'
@@ -49,6 +50,7 @@ def get_main_keyboard(context: ContextTypes.DEFAULT_TYPE, user_id: int = None) -
         [InlineKeyboardButton(tl.load(tl.LABEL_INSPIRATION_GENERATOR, context), callback_data=MainMenuCallback.INSPIRATION.value)],
         [InlineKeyboardButton(tl.load(tl.LABEL_REVIEWS, context), callback_data=MainMenuCallback.REVIEWS.value)],
         [InlineKeyboardButton(tl.load(tl.LABEL_CONTACTS, context), callback_data=MainMenuCallback.CONTACTS.value)],
+        [InlineKeyboardButton(tl.load(tl.LABEL_SUPPORT, context), callback_data=MainMenuCallback.SUPPORT.value)],
     ]
 
     if user_id and is_admin(user_id):

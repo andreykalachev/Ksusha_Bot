@@ -11,6 +11,7 @@ from pages.services import services_command, show_services
 from pages.mini_shop import mini_shop_command, show_mini_shop
 from pages.info import info_command, show_info
 from pages.reviews import reviews_command, show_reviews
+from pages.support import support_command, show_support
 from utils import statistics
 
 logger = configure_logging()
@@ -47,6 +48,13 @@ async def contacts_wrapper(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await show_contacts(update, context)
     else:
         await contacts_command(update, context)
+
+
+async def support_wrapper(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if update.callback_query:
+        await show_support(update, context)
+    else:
+        await support_command(update, context)
 
 
 async def articles_wrapper(update: Update, context: ContextTypes.DEFAULT_TYPE):
