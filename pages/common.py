@@ -3,6 +3,8 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from translation import translation_loader as tl
 from translation.languages import Language, Locale, LOCALE
 from telegram.ext import ContextTypes
+from typing import Optional
+import asyncio
 from enum import Enum
 from utils import statistics
 from statistics.page_visits import Page
@@ -65,6 +67,28 @@ def get_back_keyboard(context: ContextTypes.DEFAULT_TYPE) -> InlineKeyboardMarku
     return InlineKeyboardMarkup([
         [InlineKeyboardButton(tl.load(tl.LABEL_BACK, context), callback_data=MainMenuCallback.BACK.value)],
     ])
+
+
+# Key in user_data to store last sent media group message ids
+SENT_MEDIA_MESSAGE_IDS = "sent_media_message_ids"
+
+
+def store_media_message_ids(context: ContextTypes.DEFAULT_TYPE, message_ids: list[int]):
+    context.user_data[SENT_MEDIA_MESSAGE_IDS] = message_ids
+
+
+def pop_media_message_ids(context: ContextTypes.DEFAULT_TYPE) -> Optional[list[int]]:
+    return context.user_data.pop(SENT_MEDIA_MESSAGE_IDS, None)
+
+
+async def delete_stored_media_messages(context: ContextTypes.DEFAULT_TYPE, bot, chat_id: int) -> None:
+    ids = context.user_data.pop(SENT_MEDIA_MESSAGE_IDS, None)
+    if not ids:
+        return
+    try:
+        await asyncio.gather(*(bot.delete_message(chat_id=chat_id, message_id=m_id) for m_id in ids))
+    except Exception:
+        pass
 
 
 async def main_menu_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:

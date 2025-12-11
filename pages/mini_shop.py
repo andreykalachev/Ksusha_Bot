@@ -29,6 +29,11 @@ def _build_mini_shop_payload(context: ContextTypes.DEFAULT_TYPE):
 async def show_certificate(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
     await query.answer()
+    chat_id = query.message.chat_id
+    try:
+        await query.message.delete()
+    except Exception:
+        pass
     
     locale = common.get_locale(context)
     if locale == Locale.RU.value:
@@ -37,18 +42,16 @@ async def show_certificate(update: Update, context: ContextTypes.DEFAULT_TYPE):
         images = [MINI_SHOP_IMG_EN_1, MINI_SHOP_IMG_EN_2]
         
     media = [InputMediaPhoto(media=img_id) for img_id in images]
-    await context.bot.send_media_group(chat_id=query.message.chat_id, media=media)
+    media_messages = await context.bot.send_media_group(chat_id=chat_id, media=media)
+    message_ids = [m.message_id for m in media_messages]
+    common.store_media_message_ids(context, message_ids)
     
     # Send follow-up message with Back button
     keyboard = [
         [InlineKeyboardButton(tl.load(tl.LABEL_MAIN_MENU, context), callback_data=common.MainMenuCallback.BACK.value)],
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
-    await context.bot.send_message(
-        chat_id=query.message.chat_id,
-        text=tl.load(tl.CERTIFICATE_TEXT, context),
-        reply_markup=reply_markup
-    )
+    await context.bot.send_message(chat_id=chat_id, text=tl.load(tl.CERTIFICATE_TEXT, context), reply_markup=reply_markup)
 
 
 async def show_mini_shop(update: Update, context: ContextTypes.DEFAULT_TYPE):

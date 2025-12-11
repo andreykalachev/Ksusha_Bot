@@ -39,6 +39,7 @@ async def menu_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
         statistics.increment_page(Page.MAIN)
         greeting = tl.load(tl.ABOUT_TEXT, context)
         keyboard = common.get_main_keyboard(context, user_id=update.effective_user.id)
+        await common.delete_stored_media_messages(context, context.bot, query.message.chat_id)
         try:
             await query.edit_message_text(greeting, reply_markup=keyboard)
         except Exception:

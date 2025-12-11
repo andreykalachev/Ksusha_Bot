@@ -17,19 +17,19 @@ SERVICES_TEXT: |
 
   Here’s how we can work together:
 
-  🎨 Online drawing - 20€/hour
+  🎨 Online drawing - 20€／hour
 
   Just enjoy the color and the process, or learn something specific! Preparing for art school, mastering techniques or drawing "for the soul".
 
-  🧡 Online art therapy - 30€/hour
+  🧡 Online art therapy - 30€／hour
 
   We will gently and carefully analyze your request, and then, using MACRO maps and color psychology, we will draw point "A" and create point "B" - with an inspiring path on how to reach it.
 
-  🍊 In-person  individual meetings in any format - 30€/hour
+  🍊 In-person  individual meetings in any format - 30€／hour
   
   Everything is possible here - creating a personal creative path, consulting, assistance in preparing for competitions or admission!
 
-  🍊 In-person group meetings of any format - 20€/hour per person
+  🍊 In-person group meetings of any format - 20€／hour per person
 
     Master class, bachelorette party, birthday, team building - we will introduce art into any event to your taste. 
     I guarantee inspiration and lots of colors!
@@ -53,7 +53,9 @@ GUIDE_TEXT: |
   Hi, guide is unfortunately not yet translated to English:(
 ARTICLES_MENU_GREETING: "Choose an article or take the quiz - let's discover your colors together! 🎨✨"
 REVIEWS_TEXT: |
-  Here you can read reviews about my work on Profi.ru. Thank you to everyone who shares their impressions!
+  See how happy our participants and students are - maybe you'll be the next happy creator 🧡
+  
+  More reviews on personal work can be found by following the link
 MINI_SHOP_TEXT: |
   Welcome to shop! Here you'll find unique mini-products made with love and inspiration.
 INSPIRATION_INTRO: |
@@ -120,7 +122,7 @@ LABEL_INSPIRATION_GENERATOR: "✨ Daily art pulse"
 LABEL_INSPIRATION_NEW: "🔄 Generate New"
 LABEL_SUPPORT: "💵 Support"
 LABEL_SUPPORT_PAY: "💳 Support via Stripe"
-CONTACTS_BTN_TELEGRAM: "Telegram"
+CONTACTS_BTN_TELEGRAM: "Personal Telegram"
 CONTACTS_BTN_CHANNEL: "Telegram channel"
 CONTACTS_BTN_INSTAGRAM: "Instagram"
 CONTACTS_BTN_BEHANCE: "Behance"

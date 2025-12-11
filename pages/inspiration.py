@@ -1,4 +1,5 @@
 import random
+import html as _html
 from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import ContextTypes
 from translation import translation_loader as tl
@@ -26,13 +27,15 @@ async def show_inspiration(update: Update, context: ContextTypes.DEFAULT_TYPE) -
         quote = card.get('quote') or card.get('Quote', '')
         exercise = card.get('exercise') or card.get('Exercise', '')
         
+        inner = (
+            f"🎨 <b>{_html.escape(color)}</b>\n\n"
+            f"<b><i>{_html.escape(quote)}</i></b>\n\n"
+            f"🧘‍♀️ <b>{_html.escape(exercise)}</b>"
+        )
+
         text = (
-            f"{intro_text}\n\n"
-            f"-------------------------\n"
-            f"🎨 *{color}*\n\n"
-            f"_{quote}_\n\n"
-            f"🧘‍♀️ {exercise}\n"
-            f"-------------------------\n\n\n"
+            f"{intro_text}\n"
+            f"<blockquote>{inner}</blockquote>\n\n"
             f"{outro_text}"
         )
 
@@ -44,11 +47,11 @@ async def show_inspiration(update: Update, context: ContextTypes.DEFAULT_TYPE) -
     # If called from menu, edit message. If called via command (if we add one), send message.
     if query:
         try:
-            await query.edit_message_text(text=text, reply_markup=keyboard, parse_mode='Markdown')
+            await query.edit_message_text(text=text, reply_markup=keyboard, parse_mode='HTML')
         except Exception:
             pass
     else:
-        await update.message.reply_text(text=text, reply_markup=keyboard, parse_mode='Markdown')
+        await update.message.reply_text(text=text, reply_markup=keyboard, parse_mode='HTML')
 
 async def inspiration_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await show_inspiration(update, context)

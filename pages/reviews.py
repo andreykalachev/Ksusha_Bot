@@ -52,7 +52,12 @@ async def show_reviews(update: Update, context: ContextTypes.DEFAULT_TYPE):
     media_group = [InputMediaPhoto(media=photo) for photo in photos]
     
     if media_group:
-        await context.bot.send_media_group(chat_id=query.message.chat_id, media=media_group)
+        media_messages = await context.bot.send_media_group(chat_id=query.message.chat_id, media=media_group)
+        try:
+            message_ids = [m.message_id for m in media_messages]
+            common.store_media_message_ids(context, message_ids)
+        except Exception:
+            pass
 
     text, reply_markup = _build_reviews_payload(context)
     await context.bot.send_message(chat_id=query.message.chat_id, text=text, reply_markup=reply_markup)
@@ -63,7 +68,12 @@ async def reviews_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     media_group = [InputMediaPhoto(media=photo) for photo in photos]
     
     if media_group:
-        await update.message.reply_media_group(media=media_group)
+        media_messages = await update.message.reply_media_group(media=media_group)
+        try:
+            message_ids = [m.message_id for m in media_messages]
+            common.store_media_message_ids(context, message_ids)
+        except Exception:
+            pass
 
     text, reply_markup = _build_reviews_payload(context)
     await update.message.reply_text(text=text, reply_markup=reply_markup)
