@@ -30,6 +30,7 @@ def _save(model: StatisticsModel) -> None:
 
 
 from telegram import Bot
+from telegram.helpers import escape_markdown
 
 # Load model once on import and keep it in memory. Write on every update.
 _MODEL: StatisticsModel = _load()
@@ -64,9 +65,11 @@ def format_model(model: StatisticsModel, last_users_with_indices: list[tuple[int
     pv = model.page_visits
     last_reset = model.last_reset if model.last_reset else "never"
 
-    # Format last users list
+    # Format last users list. Escape user-provided names to avoid breaking Markdown parsing.
     if last_users_with_indices:
-        last_users_str = "\n".join([f"{idx}. {name}" for idx, name in last_users_with_indices])
+        last_users_str = "\n".join(
+            [f"{idx}. {escape_markdown(name, version=1)}" for idx, name in last_users_with_indices]
+        )
     else:
         last_users_str = "No users in this range."
 

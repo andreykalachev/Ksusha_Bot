@@ -28,7 +28,17 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     statistics.increment_bot_start(user.id if user else None)
 
     keyboard = get_main_keyboard(context)
-    await update.message.reply_text(tl.load(tl.ABOUT_TEXT, context), reply_markup=keyboard)
+    # Personalize the first message when user's first name is available
+    name = getattr(user, 'first_name', None) if user else None
+    if name:
+        name_str = name.strip()
+        greeting = tl.load(tl.WELCOME_PERSONAL, context, first_name=name_str)
+        about = tl.load(tl.ABOUT_TEXT, context)
+        text = f"{greeting}\n\n{about}"
+    else:
+        text = tl.load(tl.ABOUT_TEXT, context)
+
+    await update.message.reply_text(text, reply_markup=keyboard)
 
 
 async def unknown(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:

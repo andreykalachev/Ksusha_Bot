@@ -1,11 +1,10 @@
 # Business Entities
+WELCOME_PERSONAL: "Hello, {first_name}! 💫"
 ABOUT_TEXT: |
-  Hello & welcome! ✨
-
   I'm Ksenia ALF - a third‑generation artist painting in a soft, abstract style. I create artworks that celebrate femininity, warmth and emotional color.
 
-  This bot is your little creative space: explore paintings, learn through short guides, try a playful art-style quiz and connect with me for commissions or sessions. 
-  Tap around and let's discover what colors say about you! 🎨💬
+  I invite you to my world of colors!
+  Shall we begin? 🎨💬
 INFO_TEXT: |
   I'm Ksenia ALF - artist, art therapist and teacher. My journey in art is a journey to myself, to feelings and to the freedom of self-expression.
   
@@ -17,33 +16,34 @@ SERVICES_TEXT: |
 
   Here’s how we can work together:
 
-  🎨 Online drawing - 20€／hour
+  <b>🎨 Online drawing - 20€／hour</b>
 
   Just enjoy the color and the process, or learn something specific! Preparing for art school, mastering techniques or drawing "for the soul".
 
-  🧡 Online art therapy - 30€／hour
+  <b>🧡 Online art therapy - 30€／hour</b>
 
   We will gently and carefully analyze your request, and then, using MACRO maps and color psychology, we will draw point "A" and create point "B" - with an inspiring path on how to reach it.
 
-  🍊 In-person  individual meetings in any format - 30€／hour
+  <b>🔥 In-person individual meetings in any format - 30€／hour</b>
   
   Everything is possible here - creating a personal creative path, consulting, assistance in preparing for competitions or admission!
 
-  🍊 In-person group meetings of any format - 20€／hour per person
+  <b>🍊 In-person group meetings of any format - 20€／hour per person</b>
 
     Master class, bachelorette party, birthday, team building - we will introduce art into any event to your taste. 
     I guarantee inspiration and lots of colors!
 
   Write to me to discuss the terms and book a day @kseniialf
 PAINTINGS_TEXT: |
-  My works celebrate softness, femininity and emotional warmth - each canvas is an invitation to feel. 💗
+  My works celebrate sexuality, femininity, freedom and love.
 
   Services I offer:
   • Visualization of how a piece will look in your space 🏡
   • Commissioned artworks made just for you ✨
   • Collaborations with designers, galleries and brands 🌸
 
-  Worldwide shipping available 🌍 - installment options on request. For inquiries, DMs are open: @kseniialf 💌
+  Worldwide shipping available 🌍 - installment options on request.
+  For inquiries, DMs are open: @kseniialf 💌
 CONTACTS_TEXT: "I am always glad to communicate and to collaborate - click any button below to get in touch. Let's create something beautiful together! 🤍"
 GUIDE_GREET: |
   Hello, beautiful! ❤️
@@ -57,7 +57,8 @@ REVIEWS_TEXT: |
   
   More reviews on personal work can be found by following the link
 MINI_SHOP_TEXT: |
-  Welcome to shop! Here you'll find unique mini-products made with love and inspiration.
+  Welcome to shop!
+  Here you'll find unique mini-products made with love and inspiration.
 INSPIRATION_INTRO: |
   🧡 Your random inspiration for today:
 

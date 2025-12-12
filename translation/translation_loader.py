@@ -52,6 +52,7 @@ INSPIRATION_INTRO = 'INSPIRATION_INTRO'
 INSPIRATION_OUTRO = 'INSPIRATION_OUTRO'
 INSPIRATION_CARDS = 'INSPIRATION_CARDS'
 LABEL_INSPIRATION_NEW = 'LABEL_INSPIRATION_NEW'
+WELCOME_PERSONAL = 'WELCOME_PERSONAL'
 
 
 def _load_locale(locale: str) -> Dict[str, str]:
@@ -78,7 +79,18 @@ def _load_locale(locale: str) -> Dict[str, str]:
     return {}
 
 
-def load(key: str, context: ContextTypes.DEFAULT_TYPE) -> str:
+def load(key: str, context: ContextTypes.DEFAULT_TYPE, **kwargs) -> str:
+    """Load translation for the current user locale and optionally format it.
+
+    Any additional keyword args are used for str.format on the translation string.
+    This keeps existing call sites compatible while enabling simple placeholders
+    like {first_name} in translations.
+    """
     locale = common.get_locale(context)
     data = _load_locale(locale)
-    return data.get(key, key)
+    text = data.get(key, key)
+    try:
+        return text.format(**kwargs)
+    except Exception:
+        # If formatting fails for any reason, fall back to raw text.
+        return text
